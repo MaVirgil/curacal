@@ -38,6 +38,12 @@ router.post('/api/recipients:/id/occasions', (req, res) => {
   });
 });
 
+/*
+TODO: consider moving occasions to own router.
+Since occasions are so strictly tied to recipients, it might make more sense
+ to keep the routes together?
+*/
+
 router.get('/api/occasions/:id', (req, res) => {
   const occasionId = Number(req.params.id);
   res.send({ data: `Get occasion with id: ${occasionId}` });
