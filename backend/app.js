@@ -1,8 +1,8 @@
 import express from 'express';
-import apiRouter from './routers/api.router.js';
+import recipientRouter from './routers/recipient.router.js';
 const app = express();
 
-app.use(apiRouter);
+app.use(recipientRouter);
 
 app.get('/health', (req, res) => res.send('OK'));
 
