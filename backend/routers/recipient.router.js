@@ -54,7 +54,7 @@ router.patch('/api/occasions/:id', (req, res) => {
   res.send({ data: `Edit occasion with id: ${occasionId}` });
 });
 
-router.patch('/api/occasions/:id', (req, res) => {
+router.delete('/api/occasions/:id', (req, res) => {
   const occasionId = Number(req.params.id);
   res.send({ data: `Delete occasion with id: ${occasionId}`} );
 });
